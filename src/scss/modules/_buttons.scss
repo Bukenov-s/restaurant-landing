@@ -1,0 +1,28 @@
+.btn {
+  padding: 0.6rem 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.btn-black {
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.btn-white {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 0.8rem 1.6rem;
+  }
+}

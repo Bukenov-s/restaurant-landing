@@ -1,0 +1,69 @@
+.reservation {
+  background: url('../img/pattern1.jpg');
+  background-position: center;
+  position: relative;
+  box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-45deg, #205a5b, #fff);
+    opacity: 0.1;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+  }
+  p {
+    text-align: center;
+    font-family: $lato;
+  }
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.form-field-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $openSans;
+
+  label {
+    color: $golden;
+    font-weight: bold;
+  }
+
+  input {
+    width: 85%;
+  }
+}
+
+#submit {
+  background: $golden;
+  border: 0;
+  margin: 1rem auto;
+}
+
+@media (min-width: 768px) {
+  .form-field {
+    flex-direction: row;
+  }
+
+  .form-field-group {
+    flex-direction: column;
+    align-items: flex-start;
+
+    input {
+      width: 85%;
+    }
+  }
+}

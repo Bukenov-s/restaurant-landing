@@ -1,0 +1,168 @@
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-row {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+  padding: 0.5rem 0;
+  transition: all 0.2ms ease;
+}
+
+#logo img {
+  height: 50px;
+}
+
+.spacer {
+  flex: 1;
+  margin: 1rem 0;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  flex-basis: 100%;
+  text-align: center;
+
+  li {
+    position: relative;
+  }
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 1rem;
+  display: block;
+  font-family: $gentiumBookBasic;
+  text-transform: capitalize;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.nav-social {
+  display: none;
+  order: 1;
+  a {
+    color: $golden;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+}
+
+.nav-burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 2%;
+  height: 20px;
+}
+
+.line {
+  height: 3px;
+  background-color: #000;
+  width: 30px;
+}
+
+.open {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  #logo {
+    flex: 1;
+    img {
+      height: 70px;
+    }
+  }
+
+  .links {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+
+    li {
+      a {
+        margin: 0.5rem;
+      }
+    }
+  }
+
+  .active::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: $white;
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+
+  .nav-burger {
+    display: none;
+  }
+}
+
+@media (min-width: 921px) {
+  .links {
+    li {
+      a {
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #logo {
+    img {
+      height: 92px;
+    }
+  }
+  .nav-social {
+    display: block;
+  }
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-decoration: none;
+  display: none;
+  transition: all 0.3s ease;
+  z-index: 500;
+
+  i {
+    font-size: 1.2rem;
+    color: #fff;
+    position: absolute;
+    left: 11px;
+    top: 9px;
+  }
+}
+
+#navbar {
+  width: 100%;
+  top: 0;
+  display: block;
+  position: fixed;
+  z-index: 999;
+  transition: all 0.5s ease;
+}
+
+.scrolling {
+  background-color: #000;
+}

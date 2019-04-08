@@ -1,0 +1,26 @@
+// Fonts
+$yeseva: 'YesevaOne', serif;
+$lato: 'Lato', sans-serif;
+$gentiumBookBasic: 'Gentium Book Basic', serif;
+$openSans: 'Open Sans', serif;
+
+// Colors
+$golden: #cc9900;
+$white: #dde0df;
+
+.golden-heading {
+  font-family: $yeseva;
+  color: $golden;
+  text-align: center;
+}
+
+.white-heading {
+  font-family: $yeseva;
+  color: $white;
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+}

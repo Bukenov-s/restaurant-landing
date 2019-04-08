@@ -1,0 +1,45 @@
+.about {
+  background: url('../img/pattern1.jpg');
+  background-position: center;
+  min-height: 710px;
+  box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-45deg, #205a5b, #fff);
+    opacity: 0.2;
+  }
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    color: rgb(76, 76, 76);
+    font-size: 16px;
+    font-family: 'Lato';
+  }
+}
+
+.cook-img {
+  margin-left: 75px;
+}
+
+.about-dish {
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,54 @@
+.food-menu {
+  background: url('../img/pattern2.jpg');
+  background-position: center;
+  min-height: 995px;
+  position: relative;
+  box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, #205a5b, #fff);
+    opacity: 0.2;
+  }
+}
+
+.food-menu-table {
+  h3 {
+    text-align: center;
+  }
+}
+
+.food-menu-item {
+  margin: 0.5rem 0;
+  padding: 0.2rem;
+  position: relative;
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+.dish-title {
+  display: flex;
+  justify-content: space-between;
+  h4 {
+    margin: 0;
+  }
+}
+
+.special-dish {
+  border: 1px solid $golden;
+}
+
+.special-dish-tag {
+  position: absolute;
+  right: 0;
+  height: 20px;
+  padding: 2px;
+  color: #fff;
+  top: -20px;
+  background: linear-gradient(to right, #d7be75, #d5b967);
+}
