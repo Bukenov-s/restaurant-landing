@@ -5,9 +5,13 @@
   "url": "-",
   "version": "1.0.5",
   "license": "MIT",
+  "homepage": "https://bukenov-s.github.io/restaurant-landing",
   "repository": {
     "type": "git",
     "url": "-"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d app"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
@@ -21,5 +25,8 @@
     "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.8",
     "jshint": "^2.8.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
