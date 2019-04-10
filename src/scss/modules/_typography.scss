@@ -24,3 +24,23 @@ $white: #dde0df;
   display: flex;
   justify-content: center;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'YesevaOne';
+  src: url('../fonts/Yeseva_One/YesevaOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Gentium Book Basic';
+  src: url('../fonts/Gentium_Book_Basic/GenBkBasR.ttf');
+}
