@@ -530,6 +530,8 @@ nav {
         flex: 1; }
     .links li a {
       margin: 0.5rem; }
+  .active {
+    color: #cc9900 !important; }
   .active::after {
     content: '';
     height: 3px;
@@ -577,7 +579,7 @@ nav {
   display: block;
   position: fixed;
   z-index: 999;
-  transition: all 0.5s ease; }
+  transition: all 0.25s ease; }
 
 .scrolling {
   background-color: #000; }
