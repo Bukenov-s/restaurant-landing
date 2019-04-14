@@ -1,4 +1,4 @@
-header {
+.home {
   background: url('../img/promo-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -25,6 +25,11 @@ header {
     margin: 2rem 0;
     display: flex;
     justify-content: space-between;
+    a {
+      &:first-child {
+        margin-right: 1rem;
+      }
+    }
   }
 }
 
@@ -41,9 +46,11 @@ header {
     }
 
     .promo-buttons {
-      margin: 2rem 0;
-
-      justify-content: space-between;
+      a {
+        &:first-child {
+          margin-right: 2rem;
+        }
+      }
     }
   }
 }

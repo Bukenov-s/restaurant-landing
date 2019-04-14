@@ -8,7 +8,7 @@ nav {
 
 .nav-row {
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
-  padding: 0.5rem 0;
+  padding: 0.5rem 5%;
   transition: all 0.2ms ease;
 }
 
@@ -112,6 +112,10 @@ nav {
 
   .nav-burger {
     display: none;
+  }
+
+  .nav-row {
+    padding: 0.5rem 10%;
   }
 }
 

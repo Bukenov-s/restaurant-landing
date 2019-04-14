@@ -396,7 +396,7 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-header {
+.home {
   background: url("../img/promo-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -424,6 +424,8 @@ header {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
+    .promo .promo-buttons a:first-child {
+      margin-right: 1rem; }
 
 .promo-text {
   margin-bottom: 2rem; }
@@ -433,10 +435,8 @@ header {
     margin-top: 12rem; }
     .promo h1 {
       font-size: 5rem; }
-    .promo .promo-buttons {
-      margin: 2rem 0;
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
+    .promo .promo-buttons a:first-child {
+      margin-right: 2rem; } }
 
 nav {
   display: -ms-flexbox;
@@ -451,7 +451,7 @@ nav {
 
 .nav-row {
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
-  padding: 0.5rem 0;
+  padding: 0.5rem 5%;
   transition: all 0.2ms ease; }
 
 #logo img {
@@ -542,7 +542,9 @@ nav {
     top: -30px;
     left: 0; }
   .nav-burger {
-    display: none; } }
+    display: none; }
+  .nav-row {
+    padding: 0.5rem 10%; } }
 
 @media (min-width: 921px) {
   .links li a {
@@ -823,7 +825,6 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   cursor: pointer;
-  margin: 0 1rem;
   text-decoration: none;
   display: block;
   white-space: nowrap; }
