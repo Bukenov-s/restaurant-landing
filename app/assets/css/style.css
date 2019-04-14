@@ -639,7 +639,7 @@ nav {
       align-items: center;
   text-align: center;
   color: #fff;
-  padding: 65px; }
+  padding: 2rem; }
   .ingredients-text h3 {
     font-size: 2rem; }
   .ingredients-text p {
@@ -659,6 +659,10 @@ nav {
     display: block;
     max-width: 100%;
     height: auto; }
+
+@media (min-width: 768px) {
+  .ingredients-text {
+    padding: 4rem; } }
 
 .food-menu {
   background: url("../img/pattern2.jpg");
@@ -721,7 +725,7 @@ nav {
   background: rgba(0, 0, 0, 0.7);
   color: #dde0df;
   text-align: center;
-  padding: 65px; }
+  padding: 2rem; }
   .review-text p {
     font-family: "Gentium Book Basic", serif;
     line-height: 1.8; }
@@ -729,6 +733,10 @@ nav {
     text-decoration: none;
     font-family: "Gentium Book Basic", serif;
     color: #fff; }
+
+@media (min-width: 768px) {
+  .review-text {
+    padding: 4rem; } }
 
 .reservation {
   background: url("../img/pattern1.jpg");
